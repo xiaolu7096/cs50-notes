@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>cs50 Trivia!</title>
+        <script src="script.js">
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Hello Trivia!</h1>
+            <P id="score">score:0/2</P>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>How much time does "一坤年" represent?</h3>
+                <button class="mc-option">1.5</button>
+                <button class="mc-option">2.5</button>
+                <button class="mc-option">3.5</button>
+                <p id="mc-feedback"></p><!--to show the answer is true or fault-->
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response </h2>
+                <hr>
+                <h3>Question: What's the name of "giegie"'s new song?</h3>
+                <input id ="fr-input" type="text" autocomplete="off" placeholder="Type your answer here">
+                <button id="fr-check">Check Answer</button>
+                <p id="fr-feedback"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
